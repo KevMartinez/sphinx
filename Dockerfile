@@ -5,7 +5,7 @@ RUN apt-get -y update &&\
 
 
 #Install parrot-sphinx
-RUN echo "deb [trusted=yes] http://plf.parrot.com/sphinx/binary `lsb_release -cs`/" | tee /etc/apt/sources.list.d/sphinx.list > /dev/null &&\
+RUN echo "deb [trusted=yes] http://plf.parrot.com/sphinx/binary bionic/" | tee /etc/apt/sources.list.d/sphinx.list > /dev/null &&\
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 508B1AE5 &&\
     apt update &&\
     apt install -y parrot-sphinx
