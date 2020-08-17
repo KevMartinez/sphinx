@@ -1,7 +1,7 @@
 FROM ubuntu:bionic
 
 RUN apt-get -y update &&\
-    gnupg2 
+    apt install -y gnupg2 
 
 
 #Install parrot-sphinx
